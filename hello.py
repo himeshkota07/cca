@@ -1,6 +1,6 @@
 import random
 print("Welcome to the guessing game")
-n=random.random(100)
+n=random.randrange(0,100)
 win=False
 attempts=0
 while(attempts<=5):
