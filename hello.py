@@ -1,6 +1,12 @@
-print("Hello")
-n=int(input("enter a number: "))
-if(n%2==0):
-  print("even number")
-else:
-  print("odd number")
+import random
+print("Welcome to the guessing game")
+n=random.randint(100)
+win=False
+for i in range(5):
+  guess=int(input("Guess the number between 0 to 100: "))
+  if(n==guess):
+    print("Correct guess.You won!")
+    win=True
+    return
+  else:
+    print("Try again😊!")
