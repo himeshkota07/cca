@@ -3,7 +3,7 @@ print("Welcome to the guessing game")
 n=random.randrange(0,100)
 win=False
 attempts=0
-while(attempts<=5):
+while(attempts<5):
   guess=int(input("Guess the number between 0 to 100: "))
   attempts+=1
   if(n==guess):
