@@ -7,6 +7,6 @@ for i in range(5):
   if(n==guess):
     print("Correct guess.You won!")
     win=True
-    return
+    return 0
   else:
     print("Try again😊!")
