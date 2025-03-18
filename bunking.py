@@ -27,7 +27,7 @@ def bunking(course):
     if(limit<=0):
         print("Sorry!You cannot bunk any more classes in this subject.")
     else:
-        res=floor((bunk/100)*Classes.get(course))
+        res=math.floor((bunk/100)*Classes.get(course))
         print(f"You can bunk {res} more classes in {user_sub} this semester")
 
 
