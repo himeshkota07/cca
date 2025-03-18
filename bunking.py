@@ -1,6 +1,6 @@
 import math
 print("College Bunking Assistant")
-n=int(input("Enter total no.of subjects: ")
+n=int(input("Enter total no.of subjects: "))
 limit=int(input("Enter the minimum required attendance(in %): ")
 subjects=[]
 Classes={}
@@ -9,11 +9,11 @@ for i in range(1,n+1):
     subjects.append(sub)
 for i in range(1,n+1):
     sub=subjects[i-1]
-    hours=int(input(f"Enter total no.of hours for subject {subjects[i-1]}: ")
+    hours=int(input(f"Enter total no.of hours for subject {subjects[i-1]}: "))
     Classes[sub]=hours
 attendance={}
 for i in range(1,n+1):
-    present=int(input(f"Enter the number of classes attended for subject {subjects[i-1]}: ")
+    present=int(input(f"Enter the number of classes attended for subject {subjects[i-1]}: "))
     sub=subjects[i-1]
     attendance[sub]=math.ceil((present/Classes[sub])*100)
 print("These are the subjects present: ")
