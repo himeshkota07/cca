@@ -5,7 +5,7 @@ limit=int(input("Enter the minimum required attendance(in %): "))
 subjects=[]
 Classes={}
 for i in range(1,n+1):
-    sub=input("Enter subject ",i,": ")
+    sub=input(f"Enter subject {i}: ")
     subjects.append(sub)
 for i in range(1,n+1):
     sub=subjects[i-1]
@@ -27,4 +27,5 @@ def bunking(course):
         print("Sorry!You cannot bunk any more classes in this subject.")
     else:
         res=floor((bunk/100)*Classes.get(course))
-        print("You can bunk ",res," more classes in ",user_sub, "this semester")
+        print(f"You can bunk {res} more classes in {user_sub} this semester")
+ 
