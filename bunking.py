@@ -37,7 +37,7 @@ user_sub=input("Enter the subject you need assistance in bunking: ")
 def bunking(course):
     current_attendance=attendance.get(course)
     bunk=int(Current.get(course))-int(current_attendance)
-    total_bunk=math.floor((100-limit)*Classes.get(course))
+    total_bunk=math.floor((100-limit)*Classes.get(course)/100)
     res=total_bunk-bunk
     if(res>0):
         print(f"You can bunk {res} more hours in this subject!")
