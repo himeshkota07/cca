@@ -13,4 +13,5 @@ while(attempts<5):
     print("Try again😊!")
 
 if(win==False):
+  print("Correct number is ",n)
   print("You lost the game. Better luck next time")
