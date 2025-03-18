@@ -1,7 +1,7 @@
 import math
 print("College Bunking Assistant")
 n=int(input("Enter total no.of subjects: "))
-limit=int(input("Enter the minimum required attendance(in %): ")
+limit=int(input("Enter the minimum required attendance(in %): "))
 subjects=[]
 Classes={}
 for i in range(1,n+1):
