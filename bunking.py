@@ -19,7 +19,8 @@ for i in range(1,n+1):
 print("These are the subjects present: ")
 print(subjects)
 user_sub=input("Enter the subject you need assistance in bunking: ")
-bunking(user_sub)
+
+
 def bunking(course):
     current_attendance=attendance.get(course)
     bunk=limit-current_attendance
@@ -28,4 +29,6 @@ def bunking(course):
     else:
         res=floor((bunk/100)*Classes.get(course))
         print(f"You can bunk {res} more classes in {user_sub} this semester")
- 
+
+
+bunking(user_sub)
